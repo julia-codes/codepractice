@@ -14,17 +14,5 @@ class Movie
         @rank -= 1
     end
     attr_accessor :title
-    attr_reader :readOnly
-    attr_writer :rank
+    attr_reader :rank
 end
-
-movie1 = Movie.new("goonies",10)
-movie2 = Movie.new("ghostbusters",9)
-movie3 = Movie.new("goldfinger")
-
-
-movie1.thumbs_down
-movie2.thumbs_up
-puts movie1
-puts movie2
-puts movie3
